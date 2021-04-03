@@ -8,7 +8,11 @@ export default defineComponent({
     return () => (
       <div class="home">
         <img alt="Vue logo" src={require('../assets/logo.png')} />
-        <ExampleOne msg="Welcome to Your Vue.js + TypeScript + TSX App" obj={{ name: 'name' }} />
+        <ExampleOne
+          msg="Welcome to Your Vue.js + TypeScript + TSX App"
+          obj={{ name: 'name' }}
+          onClick={(num) => alert(num.toString())}
+        />
       </div>
     )
   },
